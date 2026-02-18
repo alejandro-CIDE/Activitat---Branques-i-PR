@@ -1,19 +1,18 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class afegirnota {
-
-    Scanner sc = new Scanner(System.in);
+//Variables
     private String nombre;
     int[] numNotas;
 
-    // Constructor
+// Constructor
     public afegirnota(String nombre) {
         numNotas = new int[3];
         this.nombre = nombre;
     }
 
+//Getters y Setters
     public String getNombre() {
         return this.nombre;
     }
