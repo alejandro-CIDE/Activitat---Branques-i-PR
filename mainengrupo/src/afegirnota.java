@@ -4,11 +4,11 @@ import java.util.Arrays;
 public class afegirnota {
 //Variables
     private String nombre;
-    int[] numNotas;
+    double[] numNotas;
 
 // Constructor
     public afegirnota(String nombre) {
-        numNotas = new int[3];
+        numNotas = new double[3];
         this.nombre = nombre;
     }
 
@@ -17,7 +17,7 @@ public class afegirnota {
         return this.nombre;
     }
 
-    public int[] getNumNotas() {
+    public double[] getNumNotas() {
         return numNotas.clone();
     }
 
@@ -25,7 +25,7 @@ public class afegirnota {
         this.nombre = nombre;
     }
 
-    public void setNumNotas(int posicion, int newNota) {
+    public void setNumNotas(int posicion, double newNota) {
         this.numNotas[posicion] = newNota;
     }
 
